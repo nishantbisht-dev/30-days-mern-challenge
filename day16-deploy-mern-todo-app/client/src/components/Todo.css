@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputBox {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #111;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+.dark .todo {
+  background: #2a2a2a;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.logout {
+  background: crimson;
+  margin-bottom: 10px;
+  width: 100%;
+  margin: 20px;
+}
+
+.search {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.filters button {
+  flex: 1;
+  margin: 5px;
+  background: #444;
+}
+.dark .filters button {
+  background: #666;
+}
+input {
+  padding: 8px;
+  margin-left: 5px;
+}
