@@ -19,6 +19,13 @@ app.use(express.json());
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/todos", require("./routes/todoRoutes"));
 
+app.get("/", (req, res) => {
+  res.send({
+    activeStatus: true,
+    error: false,
+  });
+});
+
 // Connect MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
