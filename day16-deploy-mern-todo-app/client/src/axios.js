@@ -1,3 +1,5 @@
 import axios from "axios";
-const instance = axios.create({ baseURL: "http://localhost:5000/api" });
-export default instance;
+
+export default axios.create({
+  baseURL: "https://mern-todo-backend-2ev4.onrender.com/",
+});
